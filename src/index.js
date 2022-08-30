@@ -12,4 +12,4 @@ ReactDom.render (
 
 document.getElementById('root'))    
 
-// Or, we can just use, <> ....</>, rather than typing React.Fragment. Both works fine.
+// Or, we can just use,   <> ....</>, rather than typing React.Fragment. Both works fine.
