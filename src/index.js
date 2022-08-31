@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-ReactDom.render (
-    <React.Fragment>
+// To print current date and time.
+const currentDate = new Date().toLocaleDateString()
+const currentTime = new Date().toLocaleTimeString ()
 
-    <div className='body'>
+ReactDom.render (
+    <>
+    <div>
     <h1> Hello world! </h1>
-    <p>Welcome</p>
+    <p>Current Date is : {currentDate}</p>
+    <p>Current Time is : {currentTime}</p>
     </div>
-    </React.Fragment>,
+    </>,
 
 document.getElementById('root'))    
-
-// Or, we can just use,   <> ....</>, rather than typing React.Fragment. Both works fine.
