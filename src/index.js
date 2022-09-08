@@ -2,17 +2,16 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import "./index.css"
 import Heading from './Heading'
+import List from './List'
+import Para from './Para'
+
 
 ReactDom.render (
     <>
     <div className='body'>
     <Heading/>
-    <p>This is a paragraph</p>
-    <ol>
-        <li>Tag 1</li>
-        <li>Tage 2</li>
-        <li>Tag 3</li>
-    </ol>
+    <Para/>
+    <List/>
     </div>
     </>,
 
