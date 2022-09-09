@@ -1,16 +1,26 @@
 import React from "react";
-import {Sum, Sub, Div, Mult} from './Calc'
 
-function App(){ 
-    return( <>
-        <ul>
-                <li>Sum of two numbers is : {Sum(40,4)} </li>
-                <li>Sub of two numbers is : {Sub(40,4)} </li>
-                <li>Div of two numbers is : {Div(40,3)} </li>
-                <li>Mult of two numbers is : {Mult(40,3)} </li>
-        </ul>
-        </>
+
+function Card(props){
+    console.log(props);
+    return (
+        <>
+        <div className="container">
+        <div className="cards">
+                <div className="card">
+                        <img src={props.imgsrc} alt="mypic" className="card_img"/>
+                        <div className="card_info">
+                                <span className="card_category">{props.title}</span>
+                                <h3 className="card_title">{props.sname}</h3>
+                                <a href={props.link} target={""}>
+                                        <button className="button">Watch Now</button>
+                                </a>
+                        </div>
+                </div>
+        </div>
+        </div>
+</>
     )
 }
 
-export default App
+export default Card;
