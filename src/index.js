@@ -11,7 +11,7 @@ ReactDOM.render(
         </span>
         <h1 className="header">List of top Netflix Series</h1>
         
-<span className="container">
+<div className="container">
 <Card
         imgsrc = {Sdata[0].imgsrc}
         title = {Sdata[0].title}
@@ -31,6 +31,27 @@ ReactDOM.render(
         link = {Sdata[2].link}
 />
 
-</span>
+</div>
+<div className="container1">
+<Card
+        imgsrc = {Sdata[3].imgsrc}
+        title = {Sdata[3].title}
+        sname = {Sdata[3].sname}
+        link = {Sdata[3].link}
+/>
+<Card
+        imgsrc = {Sdata[4].imgsrc}
+        title = {Sdata[4].title}
+        sname = {Sdata[4].sname}
+        link = {Sdata[4].link}
+/>
+<Card
+        imgsrc = {Sdata[5].imgsrc}
+        title = {Sdata[5].title}
+        sname = {Sdata[5].sname}
+        link = {Sdata[5].link}
+/>
+
+</div>
 </>,
 document.getElementById('root'));
