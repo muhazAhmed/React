@@ -23,4 +23,15 @@ function Card(props){
     )
 }
 
-export default Card;
+
+function Header(){
+        <>
+        <span className="netflix">
+        <img src="https://mmos.com/wp-content/uploads/2021/07/netflix-logo-black-bg-banner.jpg" alt="Netflix"/>
+        </span>
+        <h1 className="header">List of top Netflix Series</h1>
+        </>
+        return Header
+}
+
+export {Card, Header}
